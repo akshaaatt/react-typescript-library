@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import styles from './styles.module.css';
 
 /**
  * Main Component Props
@@ -16,7 +15,7 @@ function Greeting(props: Props) {
   }, [props.message]);
 
   return (
-    <div className={styles.container}>{props.message ?? 'No Message'}</div>
+    <div>{props.message ?? 'No Message'}</div>
   );
 }
 
